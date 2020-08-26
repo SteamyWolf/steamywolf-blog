@@ -14,7 +14,7 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Adam Denisov
+  title: Wyatt Allan
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   style: black
@@ -23,9 +23,8 @@ texture:
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    github:  steamywolf
+    linkedIn: in/wyatt-allan-a41340112
     rss: rss
  
 
