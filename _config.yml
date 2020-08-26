@@ -14,9 +14,6 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  navigation: 
-    - title: About
-      url: "/_layouts/page.html"
   title: Wyatt Allan
   tagline: Angular Developer
   date_format: "%b %-d, %Y"
