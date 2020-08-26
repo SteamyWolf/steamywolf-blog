@@ -1,1 +1,16 @@
+---
+layout: post
+title:  "About Me"
+date:   2020-08-25 21:03:36 +0530
+---
 
+![texture theme preview](../../croppedMe.jpg)
+
+Hi! My name is Wyatt Allan and I am from Santa Clarita, California. You may know the area due to the theme park called Magic Mountain. I am the second oldest of 4 brothers and we all love to snowboard and dirt bike! 2020 has been quite the year for me. I got married, got my first developer job, and now my wife and I are building a house! 
+
+I work at SecurityMetrics as an Angular Developer. I recently picked up another gig with a start-up called Xenon. They found me through LinkedIn so I know that updating and working with people through social media really works at building a network. Everything I have job related is due to networking. 
+
+
+Check out my [LinkedIn][linked-in] for more info on my job history and about me.
+
+[linked-in]: https://www.linkedin.com/in/wyatt-allan-a41340112/
