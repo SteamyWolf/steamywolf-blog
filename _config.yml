@@ -16,7 +16,7 @@ permalink: /posts/:title/
 texture:
   navigation: 
     - title: About
-      url: "/about"
+      url: "/_layouts/page.html"
   title: Wyatt Allan
   tagline: Angular Developer
   date_format: "%b %-d, %Y"
