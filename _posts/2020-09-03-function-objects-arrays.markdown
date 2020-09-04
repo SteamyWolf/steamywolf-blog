@@ -4,6 +4,8 @@ title:  "Functions, Objects, and Arrays"
 date:   2020-09-03 21:03:36 +0530
 ---
 
+Functions, Objects, and Arrays!
+
 Functions
 
 - Functions are basically an Object that contains code that can be used over and over again. You can input data through your paramaters and use the data throughout the function. Technically, a function is a set of statements that can perform a task in order to return a value. Inputs and outputs.
