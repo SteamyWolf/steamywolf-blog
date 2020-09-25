@@ -122,7 +122,7 @@ submitBtn.addEventListener('click', (event) => {
 This code may be a bit renundant since either way that array is getting sent to the data. The only difference is the data being pushed to initalTodos and the id being set to either 1 or 2. I thought I would be using the id to sort at one point but that ended with failure. This code is a glimpse at my original idea to have the submit eventListener seperate the code from the existing categories into the new category. In the end this was not the right approach. :dizzy_face:
 
 
-![Click Link Above to see Photo!](../../croppedMe.jpg)
+![GitHub Logo](/images/logo.png)
 
 
 
