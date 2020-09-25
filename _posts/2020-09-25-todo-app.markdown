@@ -1,1 +1,132 @@
+---
+layout: post
+title:  "Todo App"
+date:   2020-09-25 21:03:36 +0530
+---
 
+For the past few weeks I have been working on this Todo App. It was no easy task. Even with all the tutorials out there about making the basic todo app, this one was different.
+
+#Sorting Categories
+
+This was by far the hardest part of this entire application. The data presented was uneditable so I made sure I could find a way to sort it into each category. I ended up using a loop within a loop.
+```javascript
+let categoryCheck = (formArray) => {
+    if (formArray) {
+        for (let i = 0; i < data.length; i++) {
+            for (let j = 0; j < data[i].length; j++) {
+                if (data[i].includes(...formArray)) { break }
+                if (data[i][j].category.toLowerCase() === formArray[0].category.toLowerCase()) {
+                    data[i].push(...formArray);
+                    localStorage.setItem('todos', JSON.stringify(data));
+                }
+            }
+        }
+ ```
+ Data is bascially an array with 3 arrays within it: The filtered categories of Grocery, House, and School. This code then checks to see if the incoming user input of formArray already exists within the data array. If it does then it will be pushed to that matched array. If it does not match with anything within the entire array, then it will move to this next part:
+```javascript
+let categorized = [];
+        data.forEach(arr => {
+            let filtering = arr.filter(todo => todo.category.toLowerCase() === formArray[0].category.toLowerCase());
+            if (filtering.length > 0) {
+                categorized.push(filtering)
+            }
+        })
+        console.log(categorized)
+        if (categorized.length === 0) {
+            data.push(formArray);
+            localStorage.setItem('todos', JSON.stringify(data))
+        }
+    }
+```
+Now it will be added to a new array within the data array and will also check if the next incoming array made by the user matches the new arrays already added. Sounds like a lot... and thats because it is. :metal:
+
+#Adding the Incoming Arrays
+
+Towards the end of that big function seen above, the code hits this:
+```javascript
+let combinedCategories = data.map(arr => {
+        if (arr.length > 0) {
+            return createCategories(arr)
+        }
+    })
+
+    categoryList.innerHTML = [...combinedCategories]
+    return categoryList.innerHTML.replace(/,/g, '')
+}
+```
+combinedCategories is the result of a mapping on that data array where it sends each array within it to the createCategories function. Now what is that you might ask? 
+```javascript
+function createCategories(arr) {
+    const categoryHTML = `
+        <div class="single-category">
+            <h2>${arr[0].category}</h2>
+            <ul class="todo-list">
+                ${createTodo(arr)}
+            </ul>
+        </div>
+    `
+    return [...categoryHTML].join('')
+}
+
+function createTodo(arr) {
+    const todoHTML = arr.map(todo => `
+    <li class="todo" onClick="removeTodo(event)">
+        <i class="fas fa-times-circle" id="circle-x"></i>
+        ${todo.todo}
+    </li>
+    `).join('')
+    return todoHTML
+}
+```
+This is where all the HTML is generated and then returned so that it can be set as the innerHTML of the overarching div. Notice how this function createCategories has another function within it. It is the createTodo function. So that function creates all the todos within the category. Easy right! :sweat_smile:
+
+Now you may be asking where this user array comes from? Well, it is generated when the user fills out the category and todo forms and then submits the form. An eventListener is then called:
+
+```javascript
+submitBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (todoInput.value.length === 0 || categoryInput.value.length === 0) {
+        return alert('You need to fill out both inputs')
+    } else {
+        let formArray = initalTodos.filter(todo => todo.category.toLowerCase().includes(categoryInput.value.toLowerCase()))
+        if (formArray.length > 0) {
+            let todo = {
+                id: 1,
+                todo: todoInput.value,
+                complete: false,
+                category: categoryInput.value
+            }
+            initalTodos.push(todo);
+            let createdArray = [];
+            createdArray.push(todo)
+            categoryCheck(createdArray)
+            form.reset()
+    
+        } else {
+            let newTodo = {
+                id: 2,
+                todo: todoInput.value,
+                complete: false,
+                category: categoryInput.value
+            }
+            initalTodos.push(newTodo)
+            let createdArray = [];
+            createdArray.push(newTodo)
+            categoryCheck(createdArray)
+            form.reset()
+
+        }
+    }
+})
+```
+This code may be a bit renundant since either way that array is getting sent to the data. The only difference is the data being pushed to initalTodos and the id being set to either 1 or 2. I thought I would be using the id to sort at one point but that ended with failure. This code is a glimpse at my original idea to have the submit eventListener seperate the code from the existing categories into the new category. In the end this was not the right approach. :dizzy_face:
+
+
+![Click Link Above to see Photo!](../../croppedMe.jpg)
+
+
+
+
+Check out my [LinkedIn][linked-in] for more info on my job history and about me.
+
+[linked-in]: https://www.linkedin.com/in/wyatt-allan-a41340112/
