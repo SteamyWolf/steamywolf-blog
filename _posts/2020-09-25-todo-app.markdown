@@ -122,11 +122,6 @@ submitBtn.addEventListener('click', (event) => {
 This code may be a bit renundant since either way that array is getting sent to the data. The only difference is the data being pushed to initalTodos and the id being set to either 1 or 2. I thought I would be using the id to sort at one point but that ended with failure. This code is a glimpse at my original idea to have the submit eventListener seperate the code from the existing categories into the new category. In the end this was not the right approach. :dizzy_face:
 
 
-![GitHub Logo](/images/logo.png)
+![Todo-App](../../todo-app.png)
 
-
-
-
-Check out my [LinkedIn][linked-in] for more info on my job history and about me.
-
-[linked-in]: https://www.linkedin.com/in/wyatt-allan-a41340112/
+The design of this app actually comes from a tutorial I began watching that was very simple and only had one input and the todos would simply appear beneath the input. I decided to add a category box. If I could do this all over again I definitely would not have chosen this approach. I was commitetd to get it done though so I left it how it was. I would have instead had categories displayed with no todos underneath them and when the user clicked on the category their respective todos would appear.
