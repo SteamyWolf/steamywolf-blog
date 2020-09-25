@@ -38,7 +38,7 @@ let categorized = [];
         }
     }
 ```
-Now it will be added to a new array within the data array and will also check if the next incoming array made by the user matches the new arrays already added. Sounds like a lot... and thats because it is. :metal:
+Now it will be added to a new array within the data array and will also check if the next incoming array made by the user matches the new arrays already added. Sounds like a lot... and thats because it is.
 
 #Adding the Incoming Arrays
 
@@ -78,7 +78,7 @@ function createTodo(arr) {
     return todoHTML
 }
 ```
-This is where all the HTML is generated and then returned so that it can be set as the innerHTML of the overarching div. Notice how this function createCategories has another function within it. It is the createTodo function. So that function creates all the todos within the category. Easy right! :sweat_smile:
+This is where all the HTML is generated and then returned so that it can be set as the innerHTML of the overarching div. Notice how this function createCategories has another function within it. It is the createTodo function. So that function creates all the todos within the category. Easy right!
 
 Now you may be asking where this user array comes from? Well, it is generated when the user fills out the category and todo forms and then submits the form. An eventListener is then called:
 
@@ -119,7 +119,7 @@ submitBtn.addEventListener('click', (event) => {
     }
 })
 ```
-This code may be a bit renundant since either way that array is getting sent to the data. The only difference is the data being pushed to initalTodos and the id being set to either 1 or 2. I thought I would be using the id to sort at one point but that ended with failure. This code is a glimpse at my original idea to have the submit eventListener seperate the code from the existing categories into the new category. In the end this was not the right approach. :dizzy_face:
+This code may be a bit renundant since either way that array is getting sent to the data. The only difference is the data being pushed to initalTodos and the id being set to either 1 or 2. I thought I would be using the id to sort at one point but that ended with failure. This code is a glimpse at my original idea to have the submit eventListener seperate the code from the existing categories into the new category. In the end this was not the right approach.
 
 
 ![Todo-App](../../todo-app.png)
