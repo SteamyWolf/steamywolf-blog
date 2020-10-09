@@ -4,6 +4,8 @@ title:  "Node.js"
 date:   2020-10-09 21:03:36 +0530
 ---
 
+Node.js is a powerful server side JavaScript application that communicates with the server.
+
 ### What is Node JS?
    - In my own words, NodeJS is JavaScript that is run for the server. It allows the server to know information about which pages the user is requesting and can also allow the user to receive requested JSON/other data. It is the logic for the back-end server to 'serve' what is wanted and in a specific type.
 
