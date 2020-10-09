@@ -4,10 +4,10 @@ title:  "Node.js"
 date:   2020-10-09 21:03:36 +0530
 ---
 
-## What is Node JS?
+### What is Node JS?
    - In my own words, NodeJS is JavaScript that is run for the server. It allows the server to know information about which pages the user is requesting and can also allow the user to receive requested JSON/other data. It is the logic for the back-end server to 'serve' what is wanted and in a specific type.
 
-## When do you use Node?
+### When do you use Node?
    * Node is used in various ways:
       * When Building Streaming Web Apps
           * NodeJS has a feature called the Native Stream API. This basically means that NodeJS will only download needed info from the API and will continue to                 download other info only when it is needed.
@@ -21,19 +21,19 @@ date:   2020-10-09 21:03:36 +0530
           * Microservices are basically niches in the market that companies have taken advantage of like Amazon or Facebook. They provide one service that connects people to already existing services.
           * NodeJS works great here since it is specific enough that any individual can connect to a service since NodeJS creates a specific instance for them that can be chanegd to fit their exact needs or preferences.
        
-## How is NodeJs different from JS in the browser?
+### How is NodeJs different from JS in the browser?
 - Javascript's primary focus is on the client side. Examples include showing data at determined intervals, adding dynamic changes, and manually refreshing the page. Nods.js is mainly used for running or accessing any operation system for the non-blocking operation.
 
 - Node.js only supports the Google V8 engine, but it is still JavaScript so technically it can run in any environment making it very versatile.
 
 - Design/writing patterns are different in both. Node.js features new ways of allowing data to be passed into functions and having that data change what will be given to the user.
 
-## What is Express.js?
+### What is Express.js?
 - Express is a Node.js specific minimalist web application famework that acts as the middleware for Node.js. 
 - It is useful since it allows clean and easy to read node.js code to be written in a much simpler manner. It is advertised as being fast and minimal. When comparing node.js code to express.js, the latter will always be much smaller and easier to read. 
 
-## Why would a developer choose to use a templating engine?
+### Why would a developer choose to use a templating engine?
 - Templating engines are great for 'skipping' all the JavaScript fluff that comes with trying to conenct JavaScript to the HTML. It allows for much faster displays of HTML code that has beem rendered by the templating engine to work with the JavaScript. 
 
-## Handlebars
+### Handlebars
 - I chose to use Handlebars since I normally work with Angular that also has similar syntax for displayign JavaScript code onto the HTML page as HTML elements. I have seen it used before in other projects so I thuoght it would be a good idea to use it here. It also has a lot of popularity and it one of the most highly used templating engines out there. 
