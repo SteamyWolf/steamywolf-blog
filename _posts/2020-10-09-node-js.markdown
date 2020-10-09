@@ -36,4 +36,4 @@ date:   2020-09-25 21:03:36 +0530
 - Templating engines are great for 'skipping' all the JavaScript fluff that comes with trying to conenct JavaScript to the HTML. It allows for much faster displays of HTML code that has beem rendered by the templating engine to work with the JavaScript. 
 
 ## Handlebars
-- I chose to use Handlebars since I normally work with Angular that also has similar syntax for displayign JavaScript code onto the HTML page as HTML elements. I have seen it used before in other projects so I thuoght it would be a good idea to use it here. It also has a lot of pupularity and it one of the most highly used templating engines out there. 
+- I chose to use Handlebars since I normally work with Angular that also has similar syntax for displayign JavaScript code onto the HTML page as HTML elements. I have seen it used before in other projects so I thuoght it would be a good idea to use it here. It also has a lot of popularity and it one of the most highly used templating engines out there. 
