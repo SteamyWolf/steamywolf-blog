@@ -4,7 +4,7 @@ title:  "Final Project Post #1"
 date:   2020-11-06 21:03:36 +0530
 ---
 
-# This week - The ups and downs
+### This week - The ups and downs
 This week was a great start for my final project. I did have a different project in mind to start on that involved uploading photos and having a gallery but after careful consideration of the amount of work required to learn how to manage the different pages and how to upload a photo from the user, I decided to shift gears to the project proposal presented by Landon: the recipe app.
 
 So I began this week by getting all the boilerplate down and ready. I started creating the HTML and the overall look of the project. Doing this helps me to visualize all the final pieces that need to work together. I then had some horrible flashbacks of the todo app and realized quickly that I was not going to touch any JS until I knew exactly how I wanted my backend to behave and how I was geing to receive my data. So I went straight to work on creating my Schemas and getting MongoDB set up. 
@@ -69,10 +69,10 @@ getRecipes().then(recipes => {
 A quick recap of whats going on above: I fetch the recipes and in the .then statement I fetch the ingredients that are associated with the recipe by passing in the recipe Object ID provided by MongoDB. These ingredients are then pushed into the appropriate recipe by being pushed into its ingredients array. Now each recipe will have an array with its ingredients attached to it on page load. 
 
 
-# Next Week
+### Next Week
 I plan on displaying the recipes associated with their correct categories. I'm still trying to find a way to make this work as it seems a bit tough to have the correct recipes displayed in their categories upon a click. This will take a lot of work and I hope to get a little but further. Already I have ran into some problems.
 
-# Problems
+### Problems
 - CORS
   - Cors was not being very nice to me. I looked at my older project and compared what I had done to make it work. I simply copied the headers over and also the cors() package from npm. After some alterations I was able to get it to work.
 ```javascript
