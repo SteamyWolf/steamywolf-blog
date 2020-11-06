@@ -77,9 +77,7 @@ I plan on displaying the recipes associated with their correct categories. I'm s
   - Cors was not being very nice to me. I looked at my older project and compared what I had done to make it work. I simply copied the headers over and also the cors() package from npm. After some alterations I was able to get it to work.
 ```javascript
 headers: { 'Access-Control-Allow-Orgin': 'Content-Type', 'Content-Type': 'application/json' },
-
 app.use(cors());
-
 ```
 - Class recognition
   - JS cannot find my classes since I declare them after they are loaded. This is proving to be challenging and I am still trying to find a way to make it work.
