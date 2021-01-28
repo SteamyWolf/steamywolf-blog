@@ -5,13 +5,27 @@ date:   2021-01-27 21:03:36 +0530
 ---
 
 ## What is git rebase?
-Git rebase is when we have two seperate branches and we clean up the history by combining those two branches which allows us to bring back the branches into one history line. It is very similar to the git merge but it focuses on cleaning up the history by setting the point of reference to the most change to the branch being rebased to. Let's use an example: 
+Git rebase is when we have two seperate branches and we clean up the history by combining those two branches which allows us to bring back the branches into one history line. It is very similar to the `git merge` but it focuses on cleaning up the history by setting the point of reference to the most change to the branch being rebased to. In reality, both `rebase` and `merge` are trying to acheive the same goal: get the commits from the `feature` branch onto the `master` branch. But `rebase` is a little bit different. Instead of simply mergin those `feature` branch commits into a new merge commit, git, behing the scenes, gets rid of those feature banch commits and copies them over into new master commits. Let's use an example: 
 
-In this case we have the master branch and the feature branch. View the screenshot below to see a sample of my git repsitory
+In this case we have the `master` branch and the `feature` branch. View the screenshot below to see a sample of my git repository
 ![Image of git visualization](../../Screen Shot 2021-01-27 at 5.50.06 PM.png)
 
-As we begin to perform a git rebase, what will happen is that feature branch will 'merge' itself into the master branch and pull down all of its commits with it. In this case it will be two commits ahead of the master branch. The difference will be that master is still not caught up with feature although their histories are now aligned and the reference point for 'feature' is now the most recent master commit. Here is what it looks like:
-![Image of git rebase visualization](../../)
+Soon we will `rebase`. Before doing so, I will make sure to `checkout` the master branch and then do a `git pull` to make sure I am up to date with the remote `master` branch. (In this case it will be `main` branch in the screenshots). 
+![Image of git pull](../../images/git-pull.png)
+
+Now, my `master` branch is still ahead of my `feature` branch by two commits. I next want to re-anchor my feature branch against the latest commit from the master branch. I do this by doing a `checkout` on the `feature` branch and then doing a `git rebase master`.
+
+As we begin to perform a git rebase, what will happen is that the `feature` branch will `merge` itself into the `master` branch and git will copy all of its commits with it. In this case it will be two commits ahead of the `master` branch. The difference will be that `master` is still not caught up with `feature` although their histories are now aligned and the reference point for `feature` is now the most recent master commit. Here is what it looks like:
+![Image of git rebase visualization](../../git-rebase-example.png)
+
+Let's also take a look at the command I used in my VSCode Project to my Git Repo:
+![Git Repo Commands Rebase]()
+
+
+
+
+
+
 
 
 
