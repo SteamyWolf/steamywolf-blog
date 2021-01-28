@@ -6,8 +6,12 @@ date:   2021-01-27 21:03:36 +0530
 
 ## What is git rebase?
 Git rebase is when we have two seperate branches and we clean up the history by combining those two branches which allows us to bring back the branches into one history line. It is very similar to the git merge but it focuses on cleaning up the history by setting the point of reference to the most change to the branch being rebased to. Let's use an example: 
-  In this case we have the master branch and the feature branch. View the screenshot below to see a sample of my git repsitory
-  ![Image of git visualization](../../)
+
+In this case we have the master branch and the feature branch. View the screenshot below to see a sample of my git repsitory
+![Image of git visualization](../../Screen Shot 2021-01-27 at 5.50.06 PM.png)
+
+As we begin to perform a git rebase, what will happen is that feature branch will 'merge' itself into the master branch and pull down all of its commits with it. In this case it will be two commits ahead of the master branch. The difference will be that master is still not caught up with feature although their histories are now aligned and the reference point for 'feature' is now the most recent master commit. Here is what it looks like:
+![Image of git rebase visualization](../../)
 
 
 
