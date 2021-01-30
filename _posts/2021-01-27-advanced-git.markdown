@@ -63,6 +63,11 @@ Here is an example in my local repo where I checkout feature branch, commit to i
 ![git checkout example](../../images/git-checkout.png)
 
 
+## Git Revert
+This can totally save your butt when you have pushed/commited some code up to your remote repo and you need it back. Instead of having to go into your code base and copy/pasting all that work back into your code editor, you can do a `git revert <commit hash>`. It will look something like this:
+![git revert screenshot](../../images/git-revert.png)
+
+
 
 
 
