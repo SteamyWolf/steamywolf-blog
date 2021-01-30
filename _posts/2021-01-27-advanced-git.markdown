@@ -47,13 +47,13 @@ With that information out of the way we can now move to git reset. When you have
 Here is a screen shot of my local repo that I have manipulated with some git commands.
 ![repo shot of git reset](../../images/shot-git-reset-basic.png)
 
-#### Git Reset --hard
+### Git Reset --hard
 Beware of git reset --hard! This will get rid of all of your committed changes and will whipe you machine clean of changes back to a previous state. This will get rid of work you have completed. But, by all means, if that is your intent then git gives you the tools to achieve that. Personally, I manage my changes piece by piece. `Git reset --hard` resets all three of our points above from Local Repository to before Working Directory.
 
-#### Git Reset --mixed
+### Git Reset --mixed
 Similar to `git reset --hard` is adding the `--mixed` flag. This will uncommit your changes from you Local Repository back to the Working Directory. You'll be able to see you changes in the Working Directory and your HEAD will be on the previous commit.
 
-#### Git Reset --soft
+### Git Reset --soft
 Again, `--soft` will uncommit you recent commit and send those changes to the stages area. If you were to commit right after using this command you would be back in the place you were right before you typed in the command.
 
 
