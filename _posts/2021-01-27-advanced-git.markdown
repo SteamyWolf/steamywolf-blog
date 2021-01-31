@@ -68,22 +68,16 @@ This can totally save your butt when you have pushed/commited some code up to yo
 ![git revert screenshot](../../images/git-revert.png)
 
 
+### Similarities and Differences
+Probably the most similar are the `git rebase` and `git merge` commands. Both 'merge' the branches back into a single history but `git rebase` does so by copying all the commits back into the main history line and will reference the most recent master commit. Merge will do similar but will create a new commit to where the new branch no longer is needed since it is now up to date with master.
+Use `git rebase` when you want to clean up some history commits and reference a newer version of master. Use `git merge` when you are updating you code to the newest master commit and possibly being done with your feature branch.
 
+`git revert` and `git reset` are similar in that they both roll back some code you have been working on. Depending on what flag you are setting with `git reset` will roll back some changes you have made to certain points in time while `git revert` recalls those commits. In actuality, `git revert` creates a new commit that shows the old commit returned. Can be confusing but it is how git logs the changes. Any change you make git wants to know about it, even if its going back in the past.
 
+And, of course, you should be using `git checkout` to switch between your branches to accomplish all the tasks above.
 
+## Git Submodules
+Git submodules are git repositories within git repositories. They allow third party code that you may want in your app to apply itself to your repository for use within the app. It is important to note that when you do use a submodule, it is actually a clone of the third-party repo so even if they update their repo, you won't have to go and fixes the bugs in your code. Your code will have the latest commit from the time you added it into your repo. You can update it if you like but that is up to your own discretion.
+You might use a git submodule for many reasons. Say you want to use a third-party method that makes it easier to send http requests. You can easily plug it in to the app you are using to gain access to methods or even styles to enhance/simplify your code. Mostly, you'll be using submodules that contain libraries you can tap into.
 
-
-![Click Link Above to see Photo!](../../croppedMe.jpg)
-
-Hi! My name is Wyatt Allan and I am from Santa Clarita, California. You may know the area due to the theme park called Magic Mountain. I am the second oldest of 4 brothers and we all love to snowboard and dirt bike! 2020 has been quite the year for me. I got married, got my first developer job, and now my wife and I are building a house! 
-
-I work at SecurityMetrics as an Angular Developer. I recently picked up another gig with a start-up called Xenon. They found me through LinkedIn so I know that updating and working with people through social media really works at building a network. Everything I have job related is due to networking so be sure to make the time to connect with others. 
-
-Web Developement amazes me. It is so complex and vast. Truly a man-made language to display content for users. I was originally a Cinematography student at UVU but, after realizing the job market in that field, I decided to switch gears into coding. From the beginning, I thought coding was a hackers trade but soon realized how vast it really is. To me, web development is the wild west. It stands on the frontier of whats new and seeks to explore the great unknown. How exciting to be a part of it. 
-
-In this class, I hope to really learn how to apply great JavaScript Logic to all of my projects. I realized, even as an Angular Developer, I still need a good foundation in JS to really connect all my pieces together in Angular. JavaScript has always been a hard task in my mind and I hope to dispell the belief in my head that it may be too hard for me. Time to learn like crazy... again.
-
-
-Check out my [LinkedIn][linked-in] for more info on my job history and about me.
-
-[linked-in]: https://www.linkedin.com/in/wyatt-allan-a41340112/
+Unfortunately, git sobmodules can be a bit tricky to implement into your code and are said to be bad practice. It also makes branching, cloning, and forking unnecessary/redundant. Yet, there are some perks. They allow for no duplication of source code and changes are brought in manually making it very apparent what you are using in your code. 
