@@ -1,1 +1,23 @@
+---
+layout: post
+title:  "Git"
+date:   2021-01-30 21:03:36 +0530
+---
 
+# What is Git?
+Git is a code management tool that allows for individual/teams to update code. It's features include branching off of master branches so that team members can all be working on different aspects of the same project without stepping on each others toes. It is great for allowing team access to the latest code so that all developers can work up-to-date on the latest 'commits' the the code base. Overall, it is great for allowing teams to access a remote repository of code that any developer, that is allowed, can access and begin working on.
+
+## Why is it important?
+Git is the bloodline of all developers that want to access code and work on it. Git offers some features that allow these developers to request that changes be made to the main source of the code on a project. These 'pull requests' need to be approved by a number of other developers before it can actaully make it in the master branch where the main base of code lives. Over time, the master branch will become a better and better product with less bugs since developers cannot directly write to it without receiving approvals from others on the team. 
+
+## Which problems does it solve?
+I touched on this in the above paragraphs but git is great at making sure developersdo not step on each others toes as each one works on a different feature of the project. It also minimizes bugs as branches are tested/approved before they are officially merged into the master branch where the most up-to-date code lives.
+
+# What is GitHub?
+Do not get confused with git and github. They should be thought of as seperate entities both with similar characteristics. GitHub is where developers store their code. They access github by using git. Hence the word 'HUB'. A hub for all you code. There are other code storage places such as BitBucket that essentially serve the same purpose at GitHub. GitHub allows for developers to take a look into code that is existing on the internet. A developer may have code sitting on their local machines saved and ready to be 'pushed' up to github but no one will know about it on github until they actually decide to push it up. Github is a mass storage base for developers/teams to collaborate and compare code to update their projects ane even use code from third-party developers to enhance their own projects.
+
+## What problems does it solve?
+GitHub serves as a base for code to live online so that developers can access it. Luckily, if I want to be up-to-date on recent code made by my team, they won't have to manually come over to my computer with a USB stick and say, "Here is the latest code, now download it on your machine." Only to have him drop the USB into my cup of water and have it break thus losing the code forever. All I need to do is 'pull' down the recent code directly from GitHub and then I'm up-to-date! Easy!
+
+## Difference between Git an GitHub?
+Git is the tool used on a local machine to send code over to GitHub while GitHub stores it and allows developers to use Git to pull it onto their own machines to then work on it and use Git to branch off of the main branch to not confuse the other developers/cause errors and then to push it back up to GitHub where then GitHub will ask if they want to make a pull request to compare the changes of the newly created branch and request it to be pulled into the master branch. Yes that was a long runon sentence but it gets my point across about the usage of both entities and how seperate they both are. Change GitHub to BitBucket or any other and it will all be the same.
