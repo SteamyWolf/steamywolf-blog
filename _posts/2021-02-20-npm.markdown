@@ -1,1 +1,20 @@
+---
+layout: post
+title:  "NPM"
+date:   2021-02-20 21:03:36 +0530
+---
 
+# What is NPM?
+NPM, originally stands for Node Package Manager, is an open source code base where software is shared between developers to enhance the projects of others. These types of software can be downloaded as packages to support or ease the burden of other developers who desire to use their service. 
+
+# What benefits does NPM provide?
+Using NPM can be great for accessing code from other developers who want to share their service with you, in turn, making it easier for you as the develoepr to get a working product of code. For example, it can be a bit cumbersome to write all of the MongoDB code from scratch, that is why a team of developers created Mongoose that handles all the nitty gritty for you. All you need to do is install their package through NPM and access is granted to all of the methods they provide.
+
+# What is a NPM module?
+According to the official NPM docs, "A module is any file or directory in the node_modules directory that can be loaded by the Node.js require() function." Essentially, it is parts of the package downloaded that are accessible. A package may contain a lot of 'metadata' that you won't need to actually use. The module is the part of the package you'll actually be accessing and applying into your code. It'll most likely contain methods you can access.
+Your module will be visible within the `package.json` file.
+
+# What are the 3 components of NPM?
+- Node CLI: Prompts the user for info allowing them to configure the package from NPM making it more customizable for the developers project.
+- Package.json: NPM lives within the package.json meaning that the info retrieved from the web is referenced in here from the node_modules file.
+- NPM: The overall package that allows for the installing and manipulation of the packages. It is an engine accessed from the terminal.
