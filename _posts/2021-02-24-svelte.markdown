@@ -1,1 +1,11 @@
+---
+layout: post
+title:  "Svelte"
+date:   2021-02-24 21:03:36 +0530
+---
 
+I am surprised at how bold Rich Harris is to say that React is a terrible name for ReactJS since it is not reactive. It made a lot of sense to me when he had that graphic of the values being changed showing how the virtual DOM checks for changes. By doing this, React is terribly slow since we need to rerender those functions applied to the state every time something changes. By showing the spreadsheet first, I understand why it can be frustrating to see that the whole thing needs to update rather than just the values attached to their outputs.
+
+Rich goes on to explain about half way through his presentation the drawbacks with React vs Svelte. First, Svelte code is much leaner than the React code. It requires less to get a value to simply change upon updating. He goes on to introduce the `$:` which sets a variable or even a statement to update whenever it is changed. This makes so much sense when we apply the spreadsheet mentality of values being updated upon change without complete rerender.
+
+Another feature that stood out to me was the ability to not have to include so much functionality into Svelte for things we may not be using. For example, Svelte will not automatically import transitions into itself unless the developer specifically asks for it. This will allow it to be lean and precise to do exactly what we want, thus outperforming all the other frameworks that come prebuild with a lot of things we don't even necessarily need. 
