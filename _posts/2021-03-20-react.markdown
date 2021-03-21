@@ -1,1 +1,23 @@
+---
+layout: post
+title:  "React"
+date:   2021-03-20 21:03:36 +0530
+---
 
+## React ##
+React is a javascript library that allows the developer to access React features that may act as a framework of sorts when in reality it is a library. React is great for building large applications which update based on states which are set within React to manage state across components. It can also be used to create Single Page Applications with the help of certain third-party packages that go hand-in-hand with react.
+
+React was developed by Facebook but more specifically by Jordan Walke who was a software engineer at Facebook. It was created due to the increasing rise of code mangement difficulties at Facebook and cascading updates made it hard for more team-members to join and dive in to the code. A simple, fast, and reliable solution was needed for better management of code and to simplify the results of code that would return asynchronously.
+
+### State ###
+State is any piece of data that is subject to change which affects data depending on its change. Upon change, the state will change render data that depends in it. For example, if we have an array of data being displaye to the user that depends on state and the state is changed, the data that is depending on that state will also be rerendered as to reflect the changes happened to the state.
+
+### Functional vs Class Components ###
+In the old way of doing React, class components were components that managed state and most of the logic while a functional component was used to primarily display data and would not manage state. After a major update in React, hooks became available in functional components allowing for the same functionality previsouly only attainable in class components to now be available in all components. It has even become common practice to only use Functional components.
+
+You should use Class Components when you want to manage state in your application or use hooks for component mounting. Use Functional Components to display your data.
+
+### JSX ###
+JSX is just syntactical sugar provided by React. Technically, all of the HTML you write in React isn't actually HTML. Rather, it is JSX which is then rendered down into HTML for the browser to underatand. Behind the scenes, React creates each element in JavaScript and pastes it to the DOM using the methods/syntax provided by JSX.
+
+Lifting state up is said when we want to share state between components by 'lifting state up' to the nearest common ancestor. We can then use that state in the other components.
